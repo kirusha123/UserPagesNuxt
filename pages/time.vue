@@ -19,7 +19,7 @@
               </div>
             </div>
             <div class="timer">
-              <span id="timer">00:00:05</span>
+              <span id="timer">{{this.timer}}</span>
             </div>
           </div>
         </div>
@@ -31,6 +31,16 @@
 <script>
 
 export default {
+  data(){
+    return{
+      timer:sessionStorage.getItem("timer"),
+    }
+  },
+  created(){
+    setInterval(() => {
+      this.timer = sessionStorage.getItem("timer");
+    }, 200);
+  }
 }
 </script>
 
