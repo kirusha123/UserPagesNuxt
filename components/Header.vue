@@ -8,7 +8,9 @@
         </div>
         <div class="float-right">
             <i class="far fa-bell"></i>
+            <font-awesome-icon :icon="['far', 'bell']"/>
             <i class="far fa-user"></i>
+            <font-awesome-icon :icon="['far', 'user']"/>
         </div>
     </div>
 </template>

@@ -1,0 +1,11 @@
+{
+  "Header": {
+    "description": "Auto imported from components/Header.vue"
+  },
+  "Navbar": {
+    "description": "Auto imported from components/Navbar.vue"
+  },
+  "Timer": {
+    "description": "Auto imported from components/Timer.vue"
+  }
+}

@@ -15,7 +15,8 @@
                 <span>Timer</span>
               </div>
               <div class="float-right">
-                <i class="fas fa-chevron-up"></i>
+                <!--<i class="fas fa-chevron-up"></i>-->
+                <font-awesome-icon :icon="['fas', 'chevron-up']"/>
               </div>
             </div>
             <div class="timer">

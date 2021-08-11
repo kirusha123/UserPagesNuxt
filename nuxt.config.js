@@ -1,6 +1,7 @@
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
+  buildDir: './Docs',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -53,6 +54,24 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    [
+      'nuxt-fontawesome', {
+        imports: [
+         {
+           set: '@fortawesome/free-solid-svg-icons',
+           icons: ['fas']
+         },
+         {
+           set:'@fortawesome/free-brands-svg-icons',
+           icons: ['fab']
+         },
+         {
+          set:'@fortawesome/free-regular-svg-icons',
+          icons:['far']
+         },
+       ]
+      }
+    ]
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

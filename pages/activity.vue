@@ -17,9 +17,11 @@
                   </div>
                 </div>
                 <div class="float-right">
-                  <i class="far fa-check-circle"></i>
+                  <!--<i class="far fa-check-circle"></i>-->
+                  <font-awesome-icon :icon="['fas', 'check-circle']" style="color: green;"/>
                   <span class="post-info">49 minutes ago</span>
-                  <i class="fas fa-chevron-up"></i>
+                  <!--<i class="fas fa-chevron-up"></i>-->
+                  <font-awesome-icon :icon="['fas', 'chevron-up']"/>
                 </div>
               </div>
               <div class="image-box">
@@ -31,7 +33,8 @@
               </div>
               <div class="comment-block">
                 <div class="float-left">
-                  <i class="fas fa-envelope-open-text"></i>
+                  <!--<i class="fas fa-envelope-open-text"></i>-->
+                  <font-awesome-icon :icon="['fas', 'envelope-open-text']"/>
                   <span style="color: #2375e1; margin-left: 8px">
                     Kirill Dashkevich</span
                   >
@@ -51,16 +54,20 @@
                 </div>
                 <div class="float-left" style="margin-top: 8px">
                   <div id="views">
-                    <i class="far fa-eye"></i>
-                    <span style="margin-left: 3px">438</span>
-                    <i class="far fa-comment-alt" style="margin-left: 16px"></i>
+                    <!--<i class="far fa-eye"></i>-->
+                    <font-awesome-icon :icon="['far', 'eye']"/>
+                    <span style="margin-left: 3px; margin-right:3px">438</span>
+                    <!--<i class="far fa-comment-alt" style="margin-left: 16px"></i>
+                    <font-awesome-icon :icon="['far', 'chevron-right']" style="margin-left: 16px"/>-->
+                    <font-awesome-icon :icon="['far', 'comment-alt']"/>
                     <span style="margin-left: 2px">71</span>
                   </div>
                 </div>
                 <div class="float-right" style="margin-top: 8px">
                   <div class="views" style="margin-right: 16px">
                     <span>Read post</span>
-                    <i class="fas fa-chevron-right"></i>
+                    <!--<i class="fas fa-chevron-right"></i>-->
+                    <font-awesome-icon :icon="['fas', 'chevron-right']" style="margin-left:4px;"/>
                   </div>
                 </div>
               </div>
@@ -91,9 +98,12 @@
                   >
                 </div>
                 <div style="margin-top: 16px">
-                  <i class="fab fa-vk"></i>
+                  <!--<i class="fab fa-vk"></i>
                   <i class="fab fa-vk" style="margin-left: 10px"></i>
-                  <i class="fab fa-vk" style="margin-left: 10px"></i>
+                  <i class="fab fa-vk" style="margin-left: 10px"></i>-->
+                  <font-awesome-icon :icon="['fab', 'vk']"/>
+                  <font-awesome-icon :icon="['fab', 'vk']"/>
+                  <font-awesome-icon :icon="['fab', 'vk']"/>
                 </div>
               </div>
               <div class="menu">
@@ -106,6 +116,7 @@
                   <div class="float-right">
                     <div style="margin-right: 24px; margin-top: 12px">
                       <i class="fas fa-chevron-down"></i>
+                      <font-awesome-icon :icon="['fas', 'chevron-down']"/>
                     </div>
                   </div>
                 </div>
@@ -113,7 +124,8 @@
                   <a href="#">
                     <div class="float-left">
                       <div class="nav-ico">
-                        <i class="far fa-user"></i>
+                        <!--<i class="far fa-user"></i>-->
+                        <font-awesome-icon :icon="['far', 'user']"/>
                         <span>My Profile</span>
                       </div>
                     </div>
@@ -123,7 +135,8 @@
                   <a href="">
                     <div class="float-left">
                       <div class="nav-ico">
-                        <i class="far fa-user"></i>
+                        <!--<i class="far fa-user"></i>-->
+                        <font-awesome-icon :icon="['far', 'user']"/>
                         <span>Balance</span>
                       </div>
                     </div>
@@ -139,6 +152,7 @@
                     <div class="float-left">
                       <div class="nav-ico">
                         <i class="far fa-user"></i>
+                        <font-awesome-icon :icon="['far', 'user']"/>
                         <span>Connections</span>
                       </div>
                     </div>
@@ -155,7 +169,8 @@
                   <a href="">
                     <div class="float-left">
                       <div class="nav-ico">
-                        <i class="far fa-user"></i>
+                        <!--<i class="far fa-user"></i>-->
+                        <font-awesome-icon :icon="['far', 'user']"/>
                         <span>Friends</span>
                       </div>
                     </div>
@@ -165,7 +180,8 @@
                   <a href="">
                     <div class="float-left">
                       <div class="nav-ico">
-                        <i class="far fa-user"></i>
+                        <!--<i class="far fa-user"></i>-->
+                        <font-awesome-icon :icon="['far', 'user']"/>
                         <span>Connections</span>
                       </div>
                     </div>
@@ -175,7 +191,8 @@
                   <a href="">
                     <div class="float-left">
                       <div class="nav-ico">
-                        <i class="far fa-user"></i>
+                        <!--<i class="far fa-user"></i>-->
+                        <font-awesome-icon :icon="['far', 'user']"/>
                         <span>Account settings</span>
                       </div>
                     </div>
@@ -191,7 +208,7 @@
                 >
               </div>
               <div class="float-right">
-                <i class="fas fa-chevron-down" style="margin-right: 16px"></i>
+                <font-awesome-icon :icon="['fas', 'chevron-down']" style="margin-right: 16px"/>
               </div>
             </div>
           </div>
@@ -206,7 +223,8 @@
                 </div>
                 <div class="float-right">
                   <div style="margin-right: 16px; margin-top: 12px">
-                    <i class="fas fa-chevron-down"></i>
+                    <!--<i class="fas fa-chevron-down"></i>-->
+                    <font-awesome-icon :icon="['fas', 'chevron-down']" />
                   </div>
                 </div>
               </div>
@@ -235,13 +253,13 @@ export default {
     display: inline-block;
     text-align: center;
     background-color: #e5e5e5;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
   }
 
   .workspace {
     display: inline-block;
-    height: 100%;
     min-width: 1312px;
     margin-left: auto;
     margin-right: auto;

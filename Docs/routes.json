@@ -1,0 +1,30 @@
+[
+  {
+    "name": "activity",
+    "path": "/activity",
+    "component": "H:\\\\Html+css\\\\UserPagesNuxt\\\\pages\\\\activity.vue",
+    "chunkName": "pages/activity",
+    "_name": "_57ce925a"
+  },
+  {
+    "name": "map",
+    "path": "/map",
+    "component": "H:\\\\Html+css\\\\UserPagesNuxt\\\\pages\\\\map.vue",
+    "chunkName": "pages/map",
+    "_name": "_8d77ac3e"
+  },
+  {
+    "name": "time",
+    "path": "/time",
+    "component": "H:\\\\Html+css\\\\UserPagesNuxt\\\\pages\\\\time.vue",
+    "chunkName": "pages/time",
+    "_name": "_293a16d0"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "H:\\\\Html+css\\\\UserPagesNuxt\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_514abb17"
+  }
+]
