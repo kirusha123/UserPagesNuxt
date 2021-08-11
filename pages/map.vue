@@ -28,9 +28,49 @@
 </template>
 
 <script>
+import { loadYmap } from 'vue-yandex-maps'
 
-export default { 
-  
+export default {
+  data(){
+    return{
+      settings:{
+        apiKey: '3993f4de-45b9-4907-8af0-e2115b350b9a',
+        lang: 'ru_RU',
+        coordorder: 'latlong',
+        version: '2.1'
+      }
+    }
+  }, 
+  async mounted() {
+    await loadYmap({ ...this.settings, debug: true });
+        ymaps.ready(init);
+        function init() {
+          let myMap = new ymaps.Map("YMapsID", {
+            center: [56.75, 37.16],
+            zoom: 7,
+          }),
+          myGeoObject = new ymaps.GeoObject({
+            geometry: {
+                type: "Point",
+                coordinates: [56.753450272088116,37.16410160155168]
+            },
+            properties: {
+                iconContent: 'Temple of Web Development',
+                hintContent: 'Makaka Web Web Makaka'
+            }
+          }, 
+          {
+
+            preset: 'islands#blackStretchyIcon',
+            draggable: false
+          })
+
+          myMap.geoObjects.add(myGeoObject)
+
+        };
+
+
+  }
 }
 </script>
 
