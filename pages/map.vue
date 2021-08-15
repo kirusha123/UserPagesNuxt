@@ -32,6 +32,9 @@
 import { loadYmap } from 'vue-yandex-maps'
 
 export default {
+  created(){
+    this.$store.commit('calculateTime');
+  },
   data(){
     return{
       settings:{

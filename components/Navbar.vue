@@ -46,21 +46,16 @@
                 <font-awesome-icon :icon="['fas', 'chevron-down']"/>
             </div>
         </div>
-        <Timer />
     </div>
 </template>
 
 <script>
-import Timer from "./Timer.vue"
 export default {
     props:{
         id:{
             type:Number,
             required: true
         },
-        components:{
-            Timer,
-        }
     },
     data(){
         return {
