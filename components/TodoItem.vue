@@ -66,15 +66,15 @@ export default {
         border-radius: 7px;
         font-family: 'TestFont';
         font-size: 1.3rem;
-        font-weight: 900;
+        font-weight: 500;
         background-color: #fff;
         border: 1px solid #cacaca;
         display: flex;
         justify-content: space-between;
         padding: .0rem 2rem;
         margin-bottom: 0.2rem;
-        height: 2rem;
-        line-height: 2rem;
+        height: 2.2rem;
+        line-height: 2.2rem;
     }
 
     .li:hover{

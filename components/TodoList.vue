@@ -125,7 +125,7 @@
         height: auto;
         width: auto;
         min-width: 400px;
-        max-width: 600px;
+        max-width: 900px;
     }
     .float-left{
         float: left;
@@ -140,23 +140,22 @@
 
     .header{
         font-family: 'TestFont';
-        font-weight: 900;
-        font-size: 1.8rem;
+        font-weight: 600;
+        font-size: 1.6rem;
         margin-top: 5px;
         width: 100%;
-        height: 2rem;
+        height: 2.5rem;
+        line-height: 2.5rem;
         background-color: white;
-        line-height: 2rem;
         text-align: center;
-        border-bottom: solid 1px #CACACA;
-         border-top: solid 1px #CACACA;
+        border: solid 1px #CACACA;
         border-radius: 7px;
     }
     .input{
         font-family: 'TestFont';
         font-weight: 700;
         margin-top: 5px;
-        line-height: 2rem;
+        line-height: 2.5rem;
         font-size: 1.4rem;
         width: 99%;
         max-width: 100%;  

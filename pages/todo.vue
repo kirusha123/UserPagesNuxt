@@ -17,7 +17,9 @@
 <script>
 
 export default {
-
+  created(){
+    this.$store.commit('calculateTime');
+  }
 }
 </script>
 
