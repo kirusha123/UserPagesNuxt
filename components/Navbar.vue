@@ -17,10 +17,17 @@
             </div>           
             <div v-bind:id="header-time" class="item" v-bind:class="{'active-item': selector[2].is_active}">
                 <NuxtLink class="link" to="/time">
-                    <i class="fas fa-cog"></i>
+                    <!--<i class="fas fa-cog"></i>-->
                     <font-awesome-icon :icon="['fas', 'cog']"/>
                     <span style="margin-left: 8px">Time</span>
                 </NuxtLink>
+            </div>
+             <div v-bind:id="header-todo" class="item" v-bind:class="{'active-item': selector[3].is_active}">
+               <NuxtLink class="link" to="/todo">
+                    <!--<i class="fas fa-bars"></i>-->
+                    <font-awesome-icon :icon="['fas', 'bars']"/>
+                    <span style="margin-left: 8px">Todo</span>
+                 </NuxtLink>
             </div>
         </div>
         <div class="float-right">
@@ -63,6 +70,7 @@ export default {
                     {is_active:false},
                     {is_active:false},
                     {is_active:false},
+                    {is_active:false}
                 ]
 
         };
