@@ -15,11 +15,11 @@
                 <span>Timer</span>
               </div>
               <div class="float-right">
-                <i class="fas fa-chevron-up"></i>
+                <font-awesome-icon :icon="['fas', 'chevron-up']"/>
               </div>
             </div>
             <div class="timer">
-              <span id="timer">00:00:05</span>
+              <span id="timer">{{this.$store.state.res_time}}</span>
             </div>
           </div>
         </div>
@@ -29,8 +29,20 @@
 </template>
 
 <script>
-
 export default {
+  data() {
+    return {
+      timerInt: null
+    }
+  },
+  created(){
+    this.timerInt = setInterval(() => {
+      this.$store.commit('calculateTime');
+    }, 200);
+  },
+  destroyed(){
+    clearInterval(this.timerInt);
+  },
 }
 </script>
 

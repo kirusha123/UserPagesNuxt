@@ -3,39 +3,54 @@
         <div class="float-left">
             <div v-bind:id="header-activity" class="item" v-bind:class="{'active-item': selector[0].is_active}">
                  <NuxtLink class="link" to="/activity">
-                    <i class="fas fa-bars"></i>
+                    <!--<i class="fas fa-bars"></i>-->
+                    <font-awesome-icon :icon="['fas', 'bars']"/>
                     <span style="margin-left: 8px">Activity</span>
                  </NuxtLink>
             </div>            
             <div v-bind:id="header-map" class="item" v-bind:class="{'active-item': selector[1].is_active}">
                 <NuxtLink class="link" to="/map">
-                    <i class="far fa-calendar-alt"></i>
+                    <!--<i class="far fa-calendar-alt"></i>-->
+                    <font-awesome-icon :icon="['far', 'calendar-alt']"/>
                     <span style="margin-left: 8px">Map</span>
                 </NuxtLink>
             </div>           
             <div v-bind:id="header-time" class="item" v-bind:class="{'active-item': selector[2].is_active}">
                 <NuxtLink class="link" to="/time">
-                    <i class="fas fa-cog"></i>
+                    <!--<i class="fas fa-cog"></i>-->
+                    <font-awesome-icon :icon="['fas', 'cog']"/>
                     <span style="margin-left: 8px">Time</span>
                 </NuxtLink>
+            </div>
+             <div v-bind:id="header-todo" class="item" v-bind:class="{'active-item': selector[3].is_active}">
+               <NuxtLink class="link" to="/todo">
+                    <!--<i class="fas fa-bars"></i>-->
+                    <font-awesome-icon :icon="['fas', 'bars']"/>
+                    <span style="margin-left: 8px">Todo</span>
+                 </NuxtLink>
             </div>
         </div>
         <div class="float-right">
             <div class="item">
-                <i class="far fa-sticky-note"></i>
+                <!--i class="far fa-sticky-note"></i>-->
+                <font-awesome-icon :icon="['far', 'sticky-note']"/>
                 <span>Notes</span>
             </div>
             <div class="item">
-                <i class="far fa-user"></i>
+                <!--<i class="far fa-user"></i>-->
+                <font-awesome-icon :icon="['far', 'user']"/>
                 <span>Friends</span>
             </div>
             <div class="item">
-                <i class="far fa-user"></i>
+                <!--<i class="far fa-user"></i>-->
+                <font-awesome-icon :icon="['far', 'user']"/>
                 <span>Photos</span>
             </div>
             <div class="item">
-                <i class="fas fa-cog"></i>
-                <i class="fas fa-chevron-down"></i>
+                <!--<i class="fas fa-cog"></i>-->
+                <font-awesome-icon :icon="['fas', 'cog']"/>
+                <!--<i class="fas fa-chevron-down"></i>-->
+                <font-awesome-icon :icon="['fas', 'chevron-down']"/>
             </div>
         </div>
     </div>
@@ -47,7 +62,7 @@ export default {
         id:{
             type:Number,
             required: true
-        }
+        },
     },
     data(){
         return {
@@ -55,6 +70,7 @@ export default {
                     {is_active:false},
                     {is_active:false},
                     {is_active:false},
+                    {is_active:false}
                 ]
 
         };
